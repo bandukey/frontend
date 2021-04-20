@@ -1,26 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
 import {BrowserRouter} from 'react-router-dom';
-// import Mycomponent from './Mycomponent/Mycomponent';
-import Footer from './Footer/Footer'
-import Header from './Header/Header'
-import Body from './Body/Body'
-import './css/custom.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './vendor/bootstrap/css/bootstrap.min.css';
-import 'bootstrap/dist/css/bootstrap.css';
-
+import './css/shop-homepage.css';
+import './css/form.css';
+import Container from './Components/Container';
 import './css/heroic-features.css';
+import './css/custom.css';
 
 
 function App() {
   return (
-    <BrowserRouter>
+    <div class = "app">
+      <BrowserRouter>
         <Header></Header>
-        <Body></Body>
+        <Container></Container>
         <Footer></Footer>
-    </BrowserRouter>
-
+      </BrowserRouter>
+    </div>
+      
   );
 }
 
